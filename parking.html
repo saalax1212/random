@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Name Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Random Picker</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="parking.html">Random Picker</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Random Name Picker</h2>
+        <p>Geli magaca qofka tartamaya, xogtuna way tirtirmaysaa marka la daro.</p>
+        <form id="pickerForm">
+            <input type="text" id="personName" placeholder="Geli Magaca (Xarfo kaliya)" required>
+            <button type="submit">Add to List</button>
+        </form>
+        <br>
+        <button onclick="pickWinner()" style="background-color: #e67e22;">Pick a Winner! 🏆</button>
+        <div id="winnerResult" class="winner-box"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Magaca</th>
+                </tr>
+            </thead>
+            <tbody id="namesBody"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

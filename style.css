@@ -1,0 +1,178 @@
+/* 1. Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* Font casri ah */
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    /* Midab gradient ah */
+    min-height: 100vh;
+    color: #333;
+}
+
+/* 2. Modern Navigation */
+nav {
+    background: rgba(26, 28, 36, 0.95);
+    /* Madow translucent ah */
+    backdrop-filter: blur(10px);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    color: #00d1b2;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 30px;
+    /* Geesaha wareegsan */
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    background: #00d1b2;
+    color: #1a1c24;
+}
+
+/* 3. Hero-Style Container */
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    /* Hoos qurxoon */
+    text-align: center;
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 4. Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: 0.3s;
+    background: #f9f9f9;
+}
+
+input:focus {
+    border-color: #00d1b2;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 209, 178, 0.2);
+}
+
+/* 5. Luxury Buttons */
+button {
+    background: linear-gradient(to right, #00d1b2, #00b89c);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 15px rgba(0, 209, 178, 0.3);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 209, 178, 0.4);
+}
+
+/* 6. Winner Section (Extra Special) */
+.winner-box {
+    margin: 40px 0;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    background: #f0fffb;
+    border: 3px solid #00d1b2;
+    color: #2c3e50;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.winner-box span {
+    color: #e67e22;
+    /* Midabka magaca guulaystaha */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 7. Professional Table */
+table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+th {
+    background: #f8f9fa;
+    padding: 20px;
+    font-weight: 700;
+    color: #1a1c24;
+    border-bottom: 3px solid #00d1b2;
+}
+
+td {
+    padding: 18px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover td {
+    background: #f1fdfa;
+}
